@@ -22,11 +22,7 @@ app.use((req,res,next)=>{
   next();
 });
 
-app.get('/project'(req,res)=>{
-  res.render('project.hbs',{
-    home:'project page'
-    header:'project'
-  });
+
 
 });
 app.get('/bad',(req,res)=>{
@@ -35,6 +31,11 @@ app.get('/bad',(req,res)=>{
   }
 );
 });
+app.get('/project'(req,res)=>{
+  res.render('project.hbs',{
+    home:'project page'
+    header:'project'
+  });
 
 app.get('/',(req,res)=>{
   res.render('home.hbs',{
