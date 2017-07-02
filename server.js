@@ -24,19 +24,18 @@ app.use((req,res,next)=>{
 
 
 
-});
+
 app.get('/bad',(req,res)=>{
   res.send({
     'error massege':'cant get response'
-  }
-);
+  });
 });
-app.get('/project'(req,res)=>{
+app.get('/project',(req,res)=>{
   res.render('project.hbs',{
-    home:'project page'
+    home:'project page',
     header:'project'
   });
-
+});
 app.get('/',(req,res)=>{
   res.render('home.hbs',{
     home: 'Home page',
