@@ -22,6 +22,13 @@ app.use((req,res,next)=>{
   next();
 });
 
+app.get('/project'(req,res)=>{
+  res.render('project.hbs',{
+    home:'project page'
+    header:'project'
+  });
+
+});
 app.get('/bad',(req,res)=>{
   res.send({
     'error massege':'cant get response'
